@@ -1,0 +1,366 @@
+<html>
+	<head>
+		<title>Interface design using CSS</title>
+	   <script type="text/javascript">
+           
+           function showZubairChat() {
+               var windowId = document.getElementById("chat_window");
+               var userId = document.getElementById("zubair_chat");
+               
+               if(windowId.style.display == ""){
+                   windowId.style.display = "block";
+                   userId.style.display = "block";
+               }else{
+                   document.getElementById("zohaib_chat").style.display = "";
+                   document.getElementById("zakir_chat").style.display = "";
+                   document.getElementById("preh_chat").style.display = "";
+                   document.getElementById("aqsa_chat").style.display = "";
+                   userId.style.display = "block";
+               }
+           }
+           
+           function showZohaibChat() {
+               var windowId = document.getElementById("chat_window");
+               var userId = document.getElementById("zohaib_chat");
+               
+               if(windowId.style.display == ""){
+                   windowId.style.display = "block";
+                   userId.style.display = "block";
+               }else{
+                   document.getElementById("zubair_chat").style.display = "";
+                   document.getElementById("zakir_chat").style.display = "";
+                   document.getElementById("preh_chat").style.display = "";
+                   document.getElementById("aqsa_chat").style.display = "";
+                   userId.style.display = "block";
+               }
+           }
+           
+           function showZakirChat() {
+               var windowId = document.getElementById("chat_window");
+               var userId = document.getElementById("zakir_chat");
+               
+               if(windowId.style.display == ""){
+                   windowId.style.display = "block";
+                   userId.style.display = "block";
+               }else{
+                   document.getElementById("zubair_chat").style.display = "";
+                   document.getElementById("zohaib_chat").style.display = "";
+                   document.getElementById("preh_chat").style.display = "";
+                   document.getElementById("aqsa_chat").style.display = "";
+                   userId.style.display = "block";
+               }
+           }
+           
+           function showPrehChat() {
+               var windowId = document.getElementById("chat_window");
+               var userId = document.getElementById("preh_chat");
+               
+               if(windowId.style.display == ""){
+                   windowId.style.display = "block";
+                   userId.style.display = "block";
+               }else{
+                   document.getElementById("zubair_chat").style.display = "";
+                   document.getElementById("zohaib_chat").style.display = "";
+                   document.getElementById("zakir_chat").style.display = "";
+                   document.getElementById("aqsa_chat").style.display = "";
+                   userId.style.display = "block";
+               }
+           }
+           
+           function showAqsaChat() {
+               var windowId = document.getElementById("chat_window");
+               var userId = document.getElementById("aqsa_chat");
+               
+               if(windowId.style.display == ""){
+                   windowId.style.display = "block";
+                   userId.style.display = "block";
+               }else{
+                   document.getElementById("zubair_chat").style.display = "";
+                   document.getElementById("zohaib_chat").style.display = "";
+                   document.getElementById("zakir_chat").style.display = "";
+                   document.getElementById("preh_chat").style.display = "";
+                   userId.style.display = "block";
+               }
+           }
+           
+           function closeWindow(){
+               document.getElementById("chat_window").style.display = "";
+               document.getElementById("zubair_chat").style.display = "";
+               document.getElementById("zohaib_chat").style.display = "";
+               document.getElementById("zakir_chat").style.display = "";
+               document.getElementById("preh_chat").style.display = "";
+               document.getElementById("aqsa_chat").style.display = "";
+           }
+           
+        </script>
+        
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">	
+	
+    </head>
+    
+    <body>
+        <div id="topbar">
+            <div id="logo">
+                <img width="90px" height="90px" src="chat.png">
+            </div>
+            <div id="title">
+                Online Chat Service
+            </div>
+        </div>
+        
+        <div id="interface">
+            
+            <div id="users_window">
+                    
+                    <div class="user" onclick="showZubairChat()">
+                        <img class="images" src="my.jpg">
+                        <p align="center">Zubair Ahmed</p>
+                    </div>
+                
+                    <div class="user" onclick="showZohaibChat()">
+                        <img class="images" src="my1.jpg">
+                        <p align="center" color="white">Zohaib Hassan</p>
+                    </div>
+                    
+                    <div class="user" onclick="showZakirChat()">
+                        <img class="images" src="my2.jpg" >
+                        <p pading=8px; align="center">Zakir Hussain</p>
+                    </div>
+                    
+                    <div class="user" onclick="showPrehChat()">
+                        <img class="images" id="id_preh" src="my3.jpg">
+                        <p pading=8px; align="center">Preh fatima</p>
+                    </div>
+                    
+                    <div class="user" onclick="showAqsaChat()">
+                        <img class="images" id="id_aqsa" src="my4.jpg">
+                        <p pading=8px; align="center">Aqsa Baloch</p>
+                    </div>
+                    
+                </div>
+                
+            <div class="chat" id="chat_window">
+                    
+                <div id="zohaib_chat">
+                        
+                    <div class="user_name">
+                        
+                        <div id="btn_close" onclick="closeWindow()">X</div>
+                        <div class="name">Zohaib Hassan</div>
+                            
+                        <div class="avaialability">online</div>
+                        
+                    </div>    
+                        
+                        <img class="rec_img" src="my1.jpg">
+                        
+                        <div class="received1">
+                            <div class="rec_msg_text">Hello Zubair......</div>
+                        </div>
+                        
+                        <div class="box_me">
+                            <div class="sent_msg_text">Me</div>
+                        </div>
+                            
+                        <div class="sent1">
+                            <div class="sent_msg_text">Hi! Zohaib</div>
+                        </div>
+                        
+                        <img class="rec_img" src="my1.jpg">
+                        
+                        <div class="received2">
+                            <div class="rec_msg_text">What's up?</div>
+                        </div>
+                        
+                        <div class="box_me">
+                            <div class="sent_msg_text">Me</div>
+                        </div>
+                        
+                        <div class="sent2">
+                            <div class="sent_msg_text">Fine. how are u?</div>
+                        </div>
+                    </div>
+                
+                <div id="zubair_chat">
+                        
+                    <div class="user_name">
+                        
+                        <div id="btn_close" onclick="closeWindow()">X</div>
+                        <div class="name">Zubair Ahmed</div>
+                            
+                        <div class="avaialability">online</div>
+                        
+                    </div>    
+                        
+                        <img class="rec_img" src="my.jpg">
+                        
+                        <div class="received1">
+                            <div class="rec_msg_text">Hello......</div>
+                        </div>
+                        
+                        <div class="box_me">
+                            <div class="sent_msg_text">Me</div>
+                        </div>
+                            
+                        <div class="sent1">
+                            <div class="sent_msg_text">Hi!</div>
+                        </div>
+                        
+                        <img class="rec_img" src="my.jpg">
+                        
+                        <div class="received2">
+                            <div class="rec_msg_text">What's up?</div>
+                        </div>
+                        
+                        <div class="box_me">
+                            <div class="sent_msg_text">Me</div>
+                        </div>
+                        
+                        <div class="sent2">
+                            <div class="sent_msg_text">Fine. how are u?</div>
+                        </div>
+                    </div>
+                
+                <div id="zakir_chat">
+                        
+                    <div class="user_name">
+                            
+                        <div id="btn_close" onclick="closeWindow()">X</div>
+                        <div class="name">Zakir Hussain</div>
+                            
+                        <div class="avaialability">online</div>
+                        
+                    </div>    
+                        
+                        <img class="rec_img" src="my2.jpg">
+                        
+                        <div class="received1">
+                            <div class="rec_msg_text">Hello......</div>
+                        </div>
+                        
+                        <div class="box_me">
+                            <div class="sent_msg_text">Me</div>
+                        </div>
+                            
+                        <div class="sent1">
+                            <div class="sent_msg_text">Hi!</div>
+                        </div>
+                        
+                        <img class="rec_img" src="my2.jpg">
+                        
+                        <div class="received2">
+                            <div class="rec_msg_text">What's up?</div>
+                        </div>
+                        
+                        <div class="box_me">
+                            <div class="sent_msg_text">Me</div>
+                        </div>
+                        
+                        <div class="sent2">
+                            <div class="sent_msg_text">Fine. how are u?</div>
+                        </div>
+                    </div>
+                
+                <div id="preh_chat">
+                        
+                    <div class="user_name">
+                            
+                        <div id="btn_close" onclick="closeWindow()">X</div>
+                        <div class="name">Preh Fatima</div>
+                            
+                        <div class="avaialability">online</div>
+                        
+                    </div>    
+                        
+                        <img class="rec_img" src="my3.jpg">
+                        
+                        <div class="received1">
+                            <div class="rec_msg_text">Hello......</div>
+                        </div>
+                        
+                        <div class="box_me">
+                            <div class="sent_msg_text">Me</div>
+                        </div>
+                            
+                        <div class="sent1">
+                            <div class="sent_msg_text">Hi!</div>
+                        </div>
+                        
+                        <img class="rec_img" src="my3.jpg">
+                        
+                        <div class="received2">
+                            <div class="rec_msg_text">What's up?</div>
+                        </div>
+                        
+                        <div class="box_me">
+                            <div class="sent_msg_text">Me</div>
+                        </div>
+                        
+                        <div class="sent2">
+                            <div class="sent_msg_text">Fine. how are u?</div>
+                        </div>
+                    </div>
+                
+                <div id="aqsa_chat">
+                        
+                    <div class="user_name">
+                           
+                        <div id="btn_close" onclick="closeWindow()">X</div>
+                        <div class="name">Aqsa Baloch</div>
+                            
+                        <div class="avaialability">online</div>
+                        
+                    </div>    
+                        
+                        <img class="rec_img" src="my4.jpg">
+                        
+                        <div class="received1">
+                            <div class="rec_msg_text">Hello......</div>
+                        </div>
+                        
+                        <div class="box_me">
+                            <div class="sent_msg_text">Me</div>
+                        </div>
+                            
+                        <div class="sent1">
+                            <div class="sent_msg_text">Hi!</div>
+                        </div>
+                        
+                        <img class="rec_img" src="my4.jpg">
+                        
+                        <div class="received2">
+                            <div class="rec_msg_text">What's up?</div>
+                        </div>
+                        
+                        <div class="box_me">
+                            <div class="sent_msg_text">Me</div>
+                        </div>
+                        
+                        <div class="sent2">
+                            <div class="sent_msg_text">Fine. how are u?</div>
+                        </div>
+                    </div>
+                
+                    <div class="text_field">
+                        <div id="hint">Enter message</div>
+                    </div>
+                    <div class="send_btn">
+                        <h6 id="label">Send</h6>
+                    </div>
+                </div>
+        
+        <div id="Bottombar">
+            
+            <div id="reservedtext">
+                
+                <p id="text">All copyrights <sup>&copy;</sup> are reserved 2018</p>
+            
+            </div>
+            
+            <div id="socialicons">
+                <img width="150px" height="43px" src="Socialicons.png">
+            </div>
+        </div>
+    </body>
+
+</html>
