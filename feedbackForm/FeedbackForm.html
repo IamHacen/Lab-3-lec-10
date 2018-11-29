@@ -1,0 +1,174 @@
+<html>
+    <head>
+        <title>FeedBack</title>
+        <script>
+			function check(){
+            var name=document.getElementById("name").value;
+            var email=document.getElementById("email").value;
+            var check=document.getElementsByName("agree");
+            var checkCondition=false;
+			 console.log("length="+check.length);
+            for(var i=0;i<check.length;i++){
+			 
+                if(check[i].checked){
+                    checkCondition=true;
+					 
+					
+                }
+                
+            }
+			
+            if(name==""){
+                 document.getElementById("nameError").innerHTML="please enter name first";
+            }
+            
+            if(email==""){
+                 document.getElementById("mailError").innerHTML="please enter your mail";
+            }
+            
+            if(!checkCondition){
+                document.getElementById("radioError").innerHTML="please select one of the radio buttons";
+            }
+			
+			if(name!=""&&email!=""&&checkCondition==true){
+				 //hane jako kam karno thi hithe kare image wagere jadhe sabh field fill hundae poe waro kam hite kar
+                document.getElementById("successful").style.visibility="visible";
+			}
+            }
+        </script>
+        <style type="text/css">
+            body{
+                background-image: url(headway-537308-unsplash.jpg);
+            }
+            .title{
+                text-align: center;
+                margin-top: 60px;
+                border-bottom: 1px solid gray;
+                display: block;
+                color: white;
+            }
+            .main{
+                display: inline-block;
+                border: 1px solid darkgray;
+                margin-left: 1%;
+                float: inherit;
+                width: 00px;
+                height: 500px;
+            }
+            .child{
+                display: block;
+                float:left;
+            }
+            ul{
+                display: block;
+                float: left;
+                list-style: none;
+                padding-right: 1px;
+            }
+            li{
+                float: left;
+                padding-right: 4px;
+                color: white;
+            }
+            .error{
+                color: red;
+                font-size: 10px;
+                position: absolute;
+                margin-bottom: 20px;
+                
+            }
+            p{
+                position: relative;
+            }
+            .fields{
+               
+                border: 1px solid white;
+                background-color:lavenderblush;
+                height: 25px;
+                width: 200px;
+                color:dimgrey;
+                border-radius: 20px;
+                
+            }
+            textarea{
+                width:200px;
+                height:100px;
+                resize: none;
+                background-color: lavenderblush;
+                
+            }
+            button{
+                color: white;
+                background-color: green;
+                border-radius: 20px;
+                width: 100px;
+                height: 25px;
+                margin-bottom: auto;
+            }
+            #successful{
+                background-image: url(thanks.jpg);
+                background-size: cover;   
+                width: 60%;
+                height: 90%;
+                display: inline;
+                float: left;
+                margin-top: 0%;
+                margin-left: 0%;
+                font-size: 80px;
+                text-align: center;
+                visibility: hidden;
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+        <h1 class="title">Feedback Form</h1>
+        <div Class="main">
+            <div class="child">
+                 <ul>
+                     <li>Name</li>
+                     <li><input class="fields" id="name" type="text" placeholder="Enter Name" ></li>
+                     <li><p class="error" id="nameError"></p></li>
+                </ul>
+                 <ul>
+                     <li>Email</li>
+                     <li><input class="fields" id="email" type="text" placeholder="Enter Email"></li>
+                     <li><p class="error" id="mailError"></p></li>
+                </ul>
+                 <ul>
+                     <li>Comment</li>
+                     <li><textarea id="comment"></textarea></li>
+                </ul>
+               <ul>
+                        <li>Are you agree?</li><br>
+                   <li> <input name="agree" id="radio_not_agree" type="radio">Agree 
+                       
+                        <br><input name="agree" type="radio">Not agree 
+                        
+                       <br><input name="agree" type="radio">confused 
+                         
+                        
+                </ul>
+                <ul>
+                        <li>Accept terms & conditions</li><br>
+                        <li><input name="term" type="radio">Accept
+                        <br><input name="term" type="radio">Not Accept 
+                        
+                        <li><p class="error" id="radioError"></p></li>
+                        
+                </ul>
+                <ul>
+                    <li class="button">
+                        <button class="button" type="submit"  onClick="check()"> Submit</button>
+                    </li>
+                </ul>
+                 
+            </div>
+          
+        </div>
+        <div id="successful">
+           
+        </div>
+    </body>
+</html>
