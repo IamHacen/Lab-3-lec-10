@@ -1,0 +1,235 @@
+<html>
+<head>
+    <title>This is calulator</title>
+    <style>
+             
+        .btn{
+    margin-top:5px; 
+     display:inline;
+    margin-right:13px;
+
+	width:95px;
+	height:68px;
+    overflow: hidden;
+	padding:18px 0 12px;
+	color:#c0c0c0;
+	font-family: "Myriad Pro", Arial, sans-serif;
+	font-size:1.6em;
+	font-weight: 500;
+	letter-spacing: -2px;
+	background-color:#2f2f2f;
+	border: #000 1px solid;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	text-align: center;
+	text-decoration: none;
+	text-shadow:#000 0px -1px 0px;
+	box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, inset rgba(0,0,0,0.2) 0px -2px 2px;
+	-webkit-box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, inset rgba(0,0,0,0.2) 0px -2px 2px;
+	-moz-box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, inset rgba(0,0,0,0.2) 0px -2px 2px;
+	background-image:-moz-linear-gradient(top, #363636 0%, #313234 40%, #2f2f2f 100%);
+		background-image:-webkit-linear-gradient(top, #363636 0%, #313234 40%, #2f2f2f 100%);
+			background-image:linear-gradient(top, #363636 0%, #313234 40%, #2f2f2f 100%);
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	cursor: pointer;
+            
+        }
+        
+        .equal{    
+            margin-top:5px; 
+            display:inline;
+            margin-right:13px;
+            width:430px;
+            height:68px;
+            overflow: hidden;
+            padding:18px 0 12px;
+            color:#c0c0c0;
+            font-family: "Myriad Pro", Arial, sans-serif;
+            font-size:1.6em;
+            font-weight: 500;
+            letter-spacing: -2px;
+            background-color:#2f2f2f;
+            border: #000 1px solid;
+            border-radius:5px;
+            -webkit-border-radius:5px;
+            -moz-border-radius:5px;
+            text-align: center;
+            text-decoration: none;
+            text-shadow:#000 0px -1px 0px;
+            box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, inset rgba(0,0,0,0.2) 0px -2px 2px;
+            -webkit-box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, inset rgba(0,0,0,0.2) 0px -2px 2px;
+            -moz-box-shadow: inset rgba(255,255,255,0.1) 0px 1px 0px, inset rgba(0,0,0,0.2) 0px -2px 2px;
+            background-image:-moz-linear-gradient(top, #363636 0%, #313234 40%, #2f2f2f 100%);
+                background-image:-webkit-linear-gradient(top, #363636 0%, #313234 40%, #2f2f2f 100%);
+                    background-image:linear-gradient(top, #363636 0%, #313234 40%, #2f2f2f 100%);
+            -moz-box-sizing:border-box;
+            -webkit-box-sizing:border-box;
+            box-sizing:border-box;
+            cursor: pointer;
+
+        }
+        
+        
+        .text{
+            width:420px;
+            height:93px;
+            margin: 12px auto 20px;
+           
+            padding:15px 20px;
+            color:#c0c0c0;
+            text-align: right;
+            font-size: 3em;
+            letter-spacing: 3px;
+            overflow:hidden;
+            border:#000 1px solid;
+            border-radius:7px;
+            -webkit-border-radius:7px;
+            -moz-border-radius:7px;
+            box-shadow:inset rgba(0,0,0,1) 0px 1px 4px, inset rgba(225,225,225,0.3) 0px -2px 4px -2px;
+            -webkit-box-shadow:inset rgba(0,0,0,1) 0px 1px 4px, inset rgba(225,225,225,0.3) 0px -2px 4px -2px;
+            -moz-box-shadow:inset rgba(0,0,0,1) 0px 1px 4px, inset rgba(225,225,225,0.3) 0px -2px 4px -2px;
+            background-image: -moz-linear-gradient(top, #3e3e3e 0%, #303030 100%);
+                background-image: -webkit-linear-gradient(top, #3e3e3e 0%, #303030 100%);
+                    background-image: linear-gradient(top, #3e3e3e 0%, #303030 100%);
+            -moz-box-sizing:border-box;
+            -webkit-box-sizing:border-box;
+            box-sizing:border-box;
+        }
+        
+        .btn:hover{
+            background-color: black;
+            color: white
+                
+        }
+        .btn:active {
+          box-shadow: inset rgba(0,0,0,0.5) 0px 2px 8px;
+	background-image:-moz-linear-gradient(top, #2f2f2f 0%, #363636 100%);
+		background-image:-webkit-linear-gradient(top, #2f2f2f 0%, #363636 100%);
+			background-image:linear-gradient(top, #2f2f2f 0%, #363636 100%);
+}
+         .equal:active {
+          box-shadow: inset rgba(0,0,0,0.5) 0px 2px 8px;
+	background-image:-moz-linear-gradient(top, #2f2f2f 0%, #363636 100%);
+		background-image:-webkit-linear-gradient(top, #2f2f2f 0%, #363636 100%);
+			background-image:linear-gradient(top, #2f2f2f 0%, #363636 100%);
+}
+        
+        .cal{
+	width:480px;
+	height:auto;
+	padding:10px 0;
+	margin: auto;
+	background:#232323;
+	border:#000 1px solid;
+	border-radius:7px;
+	-webkit-border-radius:7px;
+	-moz-border-radius:7px;
+	box-shadow:rgba(0,0,0,0.4) 0px 2px 5px, inset rgba(255,255,255,0.9) 0px 1px 1px -1px;
+	-webkit-box-shadow:rgba(0,0,0,0.4) 0px 2px 5px, inset rgba(255,255,255,0.9) 0px 1px 1px -1px;
+	-moz-box-shadow:rgba(0,0,0,0.4) 0px 2px 5px, inset rgba(255,255,255,0.9) 0px 1px 1px -1px;
+	background-image:-moz-linear-gradient(top, #333333, #1f1f1f);
+		background-image:-webkit-linear-gradient(top, #333333, #1f1f1f);
+			background-image:linear-gradient(top, #333333, #1f1f1f);
+	overflow: hidden;
+	text-align: center;
+}
+        .title{
+	font-size: 1.2em;
+            color: white;
+}
+    </style>
+    
+    
+    <script>
+        var number1;
+        var operation;
+        function insertValue(val){
+            
+            document.getElementById("value").value+=val;
+        }
+        function insertOperation(oper){
+             number1=document.getElementById("value").value;
+             document.getElementById("value").value="";
+            operation=oper;
+        }
+       function result(){
+            var number2=document.getElementById("value").value;
+             document.getElementById("value").value="";
+           if(number1.indexOf('.')>-1||number2.indexOf('.')>-1){
+               if(number1.indexOf('.')>-1){
+                 
+               }
+               else if(number2.indexOf('.')>-1){
+                   
+               }
+                number1=parseFloat(number1); 
+                number2=parseFloat(number2); 
+           }
+           else{
+                 number1=parseInt(number1);
+                 number2=parseInt(number2);
+                 console.log(number1);
+                 console.log(number2);
+           }
+          
+           var answer;
+            switch (operation){
+                case '+':
+                    answer=number1+number2;
+                    break;
+                case '*':
+                    answer=number1*number2;
+                    break;
+                case '-':
+                    answer=number1-number2;
+                    break;
+                case '/':
+                    answer=number1/number2;
+                    break;
+                    
+            }
+            document.getElementById("value").value=answer;
+        }
+        function clear1(){
+            
+            document.getElementById("value").value=null;
+            
+        }
+         var val= document.getElementById("value");
+        console.log(val);
+            
+    </script>
+</head>
+    <body>
+       <div class="cal">
+           <span class="title">Calculator</span>
+        <input type="text" class="text" id="value" >
+        
+        <br>
+        <input type="submit" class="btn" onClick="insertValue(1)" value="1">
+        <input type="submit" class="btn" onClick="insertValue(2)" value="2">
+        <input type="submit" class="btn" onClick="insertValue(3)" value="3">
+        <input type="submit" class="btn" onClick="insertOperation('/')" value="/">
+        <br>
+        <input type="submit" class="btn" onClick="insertValue(4)" value="4">
+        <input type="submit" class="btn" onClick="insertValue(5)" value="5">
+        <input type="submit" class="btn" onClick="insertValue(6)" value="6">
+        <input type="submit" class="btn" onClick="insertOperation('*')" value="*">
+        <br>
+        <input type="submit" class="btn" onClick="insertValue(7)" value="7">
+        <input type="submit" class="btn" onClick="insertValue(8)" value="8">
+        <input type="submit" class="btn" onClick="insertValue(9)" value="9">
+        <input type="submit" class="btn" onClick="insertOperation('-')" value="-">
+        <br>
+        <input type="submit" class="btn" onClick="insertValue('.')" value=".">
+        <input type="submit" class="btn" onClick="insertValue(0)" value="0">
+        <input type="submit" class="btn" onClick="insertOperation('+')" value="+">
+         <input type="submit" class="btn" onClick="clear1()" value="C">
+        <br>
+        <input type="submit" class="equal" onClick="result()" value="=">
+        </div>
+</body>
+</html>
